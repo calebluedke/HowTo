@@ -1,20 +1,53 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Rye" rel="stylesheet">
 <style>
+h1 {
+        font-family: 'Rye', serif;
+      }
+       h2 {
+        font-family: 'Rye', serif;
+      }
+       h3 {
+        font-family: 'Rye', serif;
+      }
+      p {
+        font-family: 'Roboto+Slab', serif;
+        font-weight: 300;
+      }
+.outer-box {
+        background-color:grey;
+        padding:10px;
+        margin:10px;
+        min-height:300px;
+      }
+      .name {
+        color:white;
+        font-family:Tahoma;
+        margin-left:20px;
+      }
+      .picture {
+        margin-left:20px;
+        float:left;
+        margin-right:20px;
+        margin-bottom:10px;
+        border:2px solid black;
+      }
+      .bio {
+        font-family:Tahoma;
+        padding-left:20px;
+        padding-right:20px;
+        padding-bottom:20px;
+      }
+      img {
+        display:block;
+      }
 div.cities {
-    background-color: black;
-    color: white;
-    margin: 20px 0 20px 0;
     padding: 20px;
 } 
 </style>
-<!-- Don't understand this error message, Error: Element head is missing a required instance of child element title.
-From line 12, column 1; to line 12, column 7
-↩</style>↩</head>↩  <bo
-Content model for element head:
-If the document is an iframe srcdoc document or if title information is available from a higher-level protocol: Zero or more elements of metadata content, of which no more than one is a title element and no more than one is a base element.
-Otherwise: One or more elements of metadata content, of which exactly one is a title element and no more than one is a base element. -->
 </head>
   <body>
     
@@ -26,7 +59,7 @@ Otherwise: One or more elements of metadata content, of which exactly one is a t
     cool. It can be a whole lot of fun if you let it be, or very frustrating if you don't.</p>
     <div class="cities">
     <!-- Used h3 tag and hex color #ff0000 here --> 
-    <h3 style="background-color:#ff0000">Buying the Parts</h3>
+    <h3>Buying the Parts</h3>
     <!-- Used p tag here -->
     <p>This is probably the biggest and most important part of building a pc, just like prep work is one of the most 
     important parts for a chef. If it isn't done, nothing can be made. First off you need a budget. For about $300 
@@ -40,11 +73,11 @@ Otherwise: One or more elements of metadata content, of which exactly one is a t
     recommend is
     <!-- Used b tag here -->
     <b>pcpartpicker.com</b>. I would suggest finding all of the parts you want except the motherboard first,
-    and finding the case last. So maybe go in this order: </p>
+    and finding the case last. So maybe go in this order:
     <!-- Used ul, li, and list-style-type:square tags here -->
     <ul style="list-style-type:square"><li>CPU</li><li>GPU</li>
     <li>RAM</li><li>CPU Cooling Unit</li><li>Hard Drive</li><li>Power Supply</li><li>Motherboard</li><li>Case</li></ul> 
-    <p>Now you can also get a wireless network adapter if you aren't going to be running an ethernet cable directly
+    Now you can also get a wireless network adapter if you aren't going to be running an ethernet cable directly
     into your PC. Now the reason I told you to pick out your motherboard after the parts, is because you have to 
     make sure that the motherboard you pick is compatable with all the other parts that you picked otherwise you 
     will have a PC that will not run. Now then after that you buy the case because you have to make sure you get
@@ -52,7 +85,7 @@ Otherwise: One or more elements of metadata content, of which exactly one is a t
     </div>
     <div class="cities">
     <!-- Used h3 tag and hex color #ff0000 here -->
-    <h3 style="background-color:#ff0000">Putting it Together</h3>
+    <h3>Putting it Together</h3>
     <!-- Used p tag here -->
     <p>Now that you have all the pieces, and your bank acount has taken a serious blow, let's put it together.
     This part is very simple, but I can't really walk you through it on paper. So I'll give you a few tips then 
@@ -70,14 +103,19 @@ Otherwise: One or more elements of metadata content, of which exactly one is a t
     is that video to walk you through the process.</p>
     <!-- Used h2 tag and hex color #ff0000 here -->
     </div>
-    <div class="cities">
-    <h2 style="background-color:#ff0000">My Bio</h2>
-    <!-- Made table with tr,td,b,i,img,and br tags -->
-<table style="width:100%"><tr><td>
-  <img src="https://calebluedke.github.io/HowTo/images/Yerp.me.png" alt="pic of me" style="width:250px;height:250px"></td>
-  <td><b><i>Caleb Luedke</i></b><br>Caleb Luedke is a student enrolled in Web Page Design through ALHSO who know a bit 
-  about building a PC and is doing this for assignment 3B.</td></tr>
-</table>
-</div>
+    <div class="outer-box">
+      <div class="name">
+        <h1>
+          About the Author
+        </h1>
+        </div>
+        <div class="picture">
+          <img src="https://calebluedke.github.io/HowTo/images/me.jpg">
+        </div>
+        <div class="bio">
+          <h2>Caleb Luedke</h2>
+          <p>Caleb Luedke is a student at Winnebago Lutheran Academy. He is in his senior year of highschool and plans on going on to college. He helps with the plays at his school by working on the sound board, and he focuses on acedemics over most else. He enjoys doing what he does right now, and is excited to continue on to college.</p>
+      </div>
+    </div>
   </body>
 </html>
